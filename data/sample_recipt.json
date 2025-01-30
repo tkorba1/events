@@ -1,0 +1,110 @@
+{
+  "receipt": {
+    "discounts": [
+      {
+        "name": "Discount Name",
+        "amount": 10.0,
+        "percentage": 5.0,
+        "properties": {
+          "promotion_id": "PROMO123",
+          "coupon_code": "COUPON456",
+          "type": "RECEIPT_DISCOUNT",
+          "discount_id": "DISCOUNT789"
+        }
+      }
+    ],
+    "identifier": "loyalty_card_123",
+    "items": [
+      {
+        "name": "Item Name",
+        "quantity": 2,
+        "total": 20.0,
+        "unit_price": 10.0,
+        "taxes": [
+          {
+            "name": "VAT",
+            "amount": 4.0,
+            "code": "VAT20"
+          }
+        ],
+        "discounts": [
+          {
+            "name": "Item Discount",
+            "quantity": 1,
+            "amount": 2.0,
+            "percentage": 10.0,
+            "properties": {
+              "promotion_Id": "ITEM_PROMO123",
+              "coupon_code": "ITEM_COUPON456",
+              "type": "MANUAL_DISCOUNT",
+              "receipt_discount_id": "ITEM_DISCOUNT789"
+            }
+          }
+        ],
+        "properties": {
+          "article_id": "ART123",
+          "commodity_group_number": 99,
+          "created_at": "2025-01-28T12:00:00+00:00",
+          "position_id": "POS001",
+          "position_type": "SALE",
+          "product_code": "SKU123",
+          "unit_of_measure": "pcs"
+        }
+      }
+    ],
+    "properties": {
+      "receipt_number": "12345",
+      "receipt_type": "SALE",
+      "receipt_status": "CLOSED",
+      "technical_receipt_id": "TECH12345",
+      "net_or_gross_values": "NET",
+      "receipt_currency": "USD",
+      "receipt_reference_transaction_id": "REF12345",
+      "receipt_reference_transaction_type": "REFUND",
+      "originating_system_of_receipt": "POS",
+      "created_at": "2025-01-28T12:00:00+00:00",
+      "opened_at": "2025-01-28T12:00:00+00:00"
+    },
+    "transaction_id": "TRANS12345",
+    "localtime": "2025-01-28T12:00:00+00:00",
+    "payments": [
+      {
+        "method": "CREDIT_CARD",
+        "amount": 20.0,
+        "currency": "USD",
+        "details": {
+          "variant": "VISA",
+          "type": "CREDIT",
+          "change": 0.0
+        }
+      }
+    ],
+    "total": 20.0,
+    "taxes": [
+      {
+        "name": "VAT",
+        "rate": 20.0,
+        "amount": 4.0,
+        "code": "VAT20",
+        "properties": {
+          "net_amount": 16.0,
+          "gross_amount": 20.0
+        }
+      }
+    ],
+    "store_reference": "STORE001",
+    "store": {
+      "name": "Main Store",
+      "address": ["123 Main Street"],
+      "city": "Metropolis",
+      "postcode": "12345",
+      "country": "USA",
+      "phone": "123-456-7890",
+      "properties": {
+        "store_opening_hours": "9 AM - 9 PM",
+        "tax_id": "TAX12345",
+        "sap_site_id": "SAP001"
+      }
+    }
+  }
+}
