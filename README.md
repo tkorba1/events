@@ -27,6 +27,7 @@ Simplified architecture:
 * Implement error handling to store error responses in `receipts/incoming_err` and `receipts/outgoing_err`.
 * Implement the Storage SDK to store receipts in Blob storage with dynamic names, e.g., `2025012912332102231.json`.
 * complete documentation about creating resources
+* add doc about send.py and recive.py
 
 
 ## Advantages of the solution
